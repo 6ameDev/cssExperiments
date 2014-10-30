@@ -1,5 +1,10 @@
-<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'/>
-
 <script type='text/javascript'>
-$(document).ready(function() {$(&#39;#PopularPosts1 img&#39;).attr(&#39;src&#39;, function(i, src) {return src.replace( &#39;s72-c&#39;, &#39;s300&#39; );});});
+  (function() {
+	  var pp = document.getElementById("PopularPosts1");
+    var thumbs = pp.getElementsByTagName("img");
+
+    for(var i=0; i &lt; thumbs.length; i++){
+        thumbs[i].src = thumbs[i].src.replace("s72-c", "s300");
+    }
+  })();
 </script>
